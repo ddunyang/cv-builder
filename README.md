@@ -14,7 +14,7 @@
 
 - **Frontend**: React 19, JavaScript (Vite)
 - **PDF 생성**: html2canvas + jsPDF
-- **스타일링**: CSS Modules
+- **스타일링**: CSS (일반 CSS 파일)
 
 ## 🚀 실행 방법
 

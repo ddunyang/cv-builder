@@ -36,7 +36,8 @@ function App() {
   const handleDownloadPDF = async () => {
     setIsDownloading(true);
     try {
-      await downloadPDF('resume-preview', `${resumeData.name || '이력서'}.pdf`);
+      const safeName = (resumeData.name || '이력서').replace(/[\\/:*?"<>|]/g, '_');
+      await downloadPDF('resume-preview', `${safeName}.pdf`);
     } finally {
       setIsDownloading(false);
     }

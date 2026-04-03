@@ -70,6 +70,7 @@ function ResumeForm({ data, onChange }) {
       <div className="form-tabs">
         {sections.map((section) => (
           <button
+            type="button"
             key={section.id}
             className={`form-tab ${activeSection === section.id ? 'active' : ''}`}
             onClick={() => setActiveSection(section.id)}

@@ -7,8 +7,10 @@ function TemplateSelector({ templates, selected, onSelect }) {
       <div className="template-list">
         {templates.map((template) => (
           <button
+            type="button"
             key={template.id}
             className={`template-item ${selected === template.id ? 'selected' : ''}`}
+            aria-pressed={selected === template.id}
             onClick={() => onSelect(template.id)}
           >
             <span className="template-icon">
