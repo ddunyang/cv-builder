@@ -1,0 +1,182 @@
+.resume-form {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 100px);
+}
+
+.form-tabs {
+  display: flex;
+  border-bottom: 1px solid #e2e8f0;
+  background: #f8fafc;
+  padding: 0 12px;
+  gap: 2px;
+}
+
+.form-tab {
+  padding: 10px 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border: none;
+  background: transparent;
+  color: #64748b;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.form-tab:hover {
+  color: #1e3a5f;
+}
+
+.form-tab.active {
+  color: #2d6a9f;
+  border-bottom-color: #2d6a9f;
+}
+
+.form-content {
+  padding: 20px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.field-group label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.field-group input,
+.field-group select,
+.field-group textarea {
+  padding: 9px 12px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  color: #1e293b;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+  background: white;
+  width: 100%;
+}
+
+.field-group input:focus,
+.field-group select:focus,
+.field-group textarea:focus {
+  outline: none;
+  border-color: #2d6a9f;
+  box-shadow: 0 0 0 3px rgba(45, 106, 159, 0.1);
+}
+
+.field-group input:disabled {
+  background: #f1f5f9;
+  color: #94a3b8;
+}
+
+.field-group textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+
+.field-hint {
+  font-size: 0.72rem;
+  color: #94a3b8;
+}
+
+.field-row {
+  display: flex;
+  gap: 10px;
+}
+
+.field-row .field-group {
+  flex: 1;
+}
+
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0;
+  color: #475569;
+  cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: auto;
+  cursor: pointer;
+}
+
+.repeatable-item {
+  background: #f8fafc;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-number {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #2d6a9f;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-remove {
+  padding: 3px 8px;
+  font-size: 0.72rem;
+  border: 1px solid #fca5a5;
+  background: #fef2f2;
+  color: #dc2626;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-remove:hover {
+  background: #fee2e2;
+}
+
+.btn-add {
+  padding: 10px;
+  border: 2px dashed #cbd5e1;
+  background: transparent;
+  color: #64748b;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 100%;
+}
+
+.btn-add:hover {
+  border-color: #2d6a9f;
+  color: #2d6a9f;
+  background: #eff6ff;
+}
